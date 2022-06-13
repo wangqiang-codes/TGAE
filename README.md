@@ -22,7 +22,7 @@ The pre-processed data can be downloaded from [here].
 Please put the pre-processed data under the folder `data`.
 
 ## Run
-1. Download the pre-processed data from [here](https://www.dropbox.com/s/48oe7shjq0ih151/data.tar.gz?dl=0)
+1. Download the pre-processed data from [here].
    and put it to the folder `data`.
 2. Specify the arguments in the `main.py`.
 3. Run the code by `python main.py`.
