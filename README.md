@@ -1,4 +1,6 @@
 # TGAE: Temporal Graph Autoencoder for Travel Forecasting
+The code will be uploaded soon.
+
 This is the PyTorch implementation of the paper:
 
 Qiang Wang, Hao Jiang, Meikang Qiu, et al., TGAE: Temporal Graph Autoencoder for Travel Forecasting, xxx
