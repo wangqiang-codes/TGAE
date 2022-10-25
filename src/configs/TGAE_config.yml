@@ -1,0 +1,53 @@
+lstm_dim: 128
+lr: 0.0001
+weight_decay: 0.0
+weight_coef: 0.3
+epsilon: 0.8               # init weight prediction threshold
+
+# record
+SummaryWriter: False
+log_freq: 10
+# training_config
+grad_clip: 0.1            # max norm for gradient clipping, or None for no gradient clipping
+ec_coef: 0.1
+edge_mask_prop: 0.1
+smooth_coef: 0.5
+mi_same_weight: True
+exponential_decay: 0.5
+sc: 1.0
+dropout: 0.5
+epochs: 10000
+optimizer: 'Adam'
+patience: 20
+seed: 0
+save: False
+save_embedding: False
+save_record: True
+lr-reduce-freq: None
+gamma: 0.5
+min-epochs: 100            # do not early stop before min-epochs
+cuda: 0
+# model_config
+loss_func: 'mse'        # mse, L1loss
+neg_sampling: False
+feature: 'None'             # feature generation method
+encoder: 'DiGATv2'         # for TGAE which encoder to use, can be any of [DiGATv1, DiGATv2]
+dim: 64                    # embedding dimension
+lr_reduce_freq: None
+
+
+isBias: False              # bias
+directed: False            # directed or undirected graph
+batch_size: 1              # batch size
+num_layers: 1              # number of hidden layers in encoder (> 1)
+bias: 1                    # whether to use bias (1) or not (0)
+act: 'relu'                # which activation function to use (or None for no activation)
+n_heads: 1                 # number of attention heads for graph attention networks, must be a divisor dim
+concat: True               # concat for multihead
+self_loops: True           # add self loops for nodes
+alpha: 0.2                 # alpha for leakyrelu in graph attention networks
+# data_config
+dataset: 'New York Green Taxi'            # dataset, 'which dataset to use'
+window_size: 15
+test_prop: 1             # proportion of test
+

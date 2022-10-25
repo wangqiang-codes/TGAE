@@ -1,0 +1,12 @@
+python==3.8.8
+networkx
+numpy
+pandas
+sklearn
+torch==1.9.0
+torch-cluster==1.5.9
+torch-scatter==2.0.9
+torch-sparse==0.6.12
+torch-spline-conv==1.2.1
+torchvision==0.10.0
+torch-geometric==2.0.4
