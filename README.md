@@ -1,12 +1,11 @@
 # TGAE: Temporal Graph Autoencoder for Travel Forecasting
-The code will be uploaded soon.
 
 This is the PyTorch implementation of the paper:
 
-Qiang Wang, Hao Jiang, Meikang Qiu, et al., TGAE: Temporal Graph Autoencoder for Travel Forecasting, xxx
+Q. Wang, H. Jiang, M. Qiu, Y. Liu and D. Ye, "TGAE: Temporal Graph Autoencoder for Travel Forecasting," in IEEE Transactions on Intelligent Transportation Systems, 2022, doi: 10.1109/TITS.2022.3202089.
 
 ## Requirements
-- python>=3.6
+- python==3.8.8
 - networkx
 - numpy
 - pandas
@@ -20,16 +19,21 @@ Qiang Wang, Hao Jiang, Meikang Qiu, et al., TGAE: Temporal Graph Autoencoder for
 - torch-geometric==2.0.4
 
 ## Data
-The pre-processed data can be downloaded from [here]. 
-Please put the pre-processed data under the folder `data`.
+The pre-processed data is under the folder `data`.
 
 ## Run
-1. Download the pre-processed data from [here].
-   and put it to the folder `data`.
-2. Specify the arguments in the `main.py`.
-3. Run the code by `python main.py`.
+1. Specify the arguments in the `train.py`.
+2. Run the code by `python train.py`.
 
 ## Citation
 Please cite the following paper, if you find the repository or the paper useful.
 
-Qiang Wang, Hao Jiang, Meikang Qiu, et al., TGAE: Temporal Graph Autoencoder for Travel Forecasting, xxx
+@ARTICLE{9889163,  
+author={Wang, Qiang and Jiang, Hao and Qiu, Meikang and Liu, Yifeng and Ye, Dongsheng},  
+journal={IEEE Transactions on Intelligent Transportation Systems},   
+title={TGAE: Temporal Graph Autoencoder for Travel Forecasting},   
+year={2022},  
+volume={},  
+number={},  
+pages={1-13},  
+doi={10.1109/TITS.2022.3202089}}
