@@ -32,8 +32,8 @@ Please cite the following paper, if you find the repository or the paper useful.
 author={Wang, Qiang and Jiang, Hao and Qiu, Meikang and Liu, Yifeng and Ye, Dongsheng},  
 journal={IEEE Transactions on Intelligent Transportation Systems},   
 title={TGAE: Temporal Graph Autoencoder for Travel Forecasting},   
-year={2023},
-volume={24},
-number={8},
-pages={8529-8541}, 
+year={2023},   
+volume={24},   
+number={8},   
+pages={8529-8541},    
 doi={10.1109/TITS.2022.3202089}}
