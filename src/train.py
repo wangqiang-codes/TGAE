@@ -88,7 +88,7 @@ def train_test_model(config, gpu_num=0):
 def model_initialize(model_name, config, gpu_num=-1):
     if int(gpu_num) < 0 or torch.cuda.device_count() == 0:
         device = 'cpu'
-    elif torch.cuda.device_count() <= int(gpu_num) + 1:
+    elif torch.cuda.device_count() >= int(gpu_num) + 1:
         device = torch.device("cuda:" + str(gpu_num) if torch.cuda.is_available() else "cpu")
     else:
         raise Exception("Torch can not detect the GPU number {}.".format(gpu_num))
